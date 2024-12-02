@@ -4,7 +4,7 @@ import './App.css';
 import './Calculator.css';
 
 // Import your image from the 'src' folder
-import dogimage from './dog.jpg'; // Update the path to match your file location
+import photoimage from './photo.jpg'; // Update the path to match your file location
 
 function KeyPadComponent(props) {
     const [text1, setText] = useState("");
@@ -80,7 +80,7 @@ function KeyPadComponent(props) {
             {imageVisible && (
                 <div className="image-container">
                     {/* Use the imported image */}
-                    <img src={dogimage} alt="Your Picture" className="profile-image" />
+                    <img src={photoimage} alt="Your Picture" className="profile-image" />
                 </div>
             )}
         </div>
@@ -88,4 +88,3 @@ function KeyPadComponent(props) {
 }
 
 export default KeyPadComponent;
-calculater.js
